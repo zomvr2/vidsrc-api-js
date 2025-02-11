@@ -2,7 +2,7 @@ import express from "express";
 import { getvidsrc } from "./src/vidsrcpro.js";
 import { getasiaheroku } from "./src/asiaheroku.js";
 
-const port = 3000;
+const port = process.env.PORT;
 
 const app = express()
 
@@ -56,5 +56,5 @@ app.get('/asiaheroku/:tmdbId', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Example app listening on port http://localhost:${port}`);
+    console.log(`Scene API up!🚀`);
 });
