@@ -1,7 +1,7 @@
 import express from "express";
 import { getvidsrc } from "./src/vidsrcpro.js";
 import { getasiaheroku } from "./src/asiaheroku.js";
-var cors = require('cors')
+import cors from "cors";
 
 const port = process.env.PORT;
 
